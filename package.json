@@ -1,0 +1,62 @@
+{
+  "name": "javascript-component",
+  "version": "0.0.1",
+  "description": "",
+  "main": "build/javascript-component.js",
+  "types": "build/src/JavaScriptComponent.d.ts",
+  "files": [
+    "demo/build",
+    "build/javascript-component.js",
+    "build/javascript-component.css",
+    "build/src/"
+  ],
+  "scripts": {
+    "build": "webpack",
+    "build-prod": "webpack -p",
+    "deploy": "sh deploy.sh ",
+    "watch": "webpack --watch --watch-poll ",
+    "prepublish": "webpack -p",
+    "lint": "standard 'src/**/*.js' 'demo/src/**/*.js'",
+    "test": "npm run lint && karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quantumjs/javascript-component.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quantumjs/javascript-component/issues"
+  },
+  "homepage": "https://github.com/quantumjs/javascript-component#readme",
+  "devDependencies": {
+    "@types/expect.js": "^0.3.29",
+    "@types/mocha": "^2.2.40",
+    "autoprefixer": "^6.5.4",
+    "babel-core": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-env": "^1.3.2",
+    "css-loader": "^0.28.0",
+    "css-variables": "^0.1.5",
+    "html-webpack-plugin": "^2.24.1",
+    "karma": "^1.5.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-mocha": "^1.3.0",
+    "karma-webpack": "^2.0.3",
+    "mocha": "^3.2.0",
+    "postcss-calc": "^5.3.1",
+    "postcss-css-variables": "^0.7.0",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-import": "^9.1.0",
+    "postcss-loader": "^1.2.2",
+    "postcss-nested": "^1.0.0",
+    "postcss-smart-import": "^0.6.0",
+    "pre-commit": "^1.2.2",
+    "standard": "^9.0.2",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.2.0",
+    "webpack-build-notifier": "^0.1.13",
+    "webpack-merge": "^4.1.0"
+  }
+}
