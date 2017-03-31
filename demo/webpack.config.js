@@ -3,7 +3,6 @@ var webpack = require('webpack')
 var WebpackBuildNotifierPlugin = require('webpack-build-notifier')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 
-
 const PATHS = {
   src: path.join(__dirname, './src'),
   build: path.join(__dirname, './build')
@@ -16,7 +15,7 @@ module.exports = {
   },
   output: {
     path: PATHS.build,
-    filename: '[name].js',
+    filename: '[name].js'
   },
   devtool: 'source-map',
   module: {
@@ -24,8 +23,7 @@ module.exports = {
       {
         test: /\.js$/,
         loader: 'babel-loader'
-      }
-      ,
+      },
       {
         test: /\.p?css$/,
         loaders: [

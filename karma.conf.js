@@ -1,20 +1,20 @@
 module.exports = (config) => {
-  const tests = 'src/**/*.js';
+  const tests = 'src/**/*.js'
 
   config.set({
     frameworks: ['mocha'],
-
+    webpack: require('./webpack.config')('development'),
     files: [
       {
-        pattern: tests,
-      },
+        pattern: tests
+      }
     ],
 
     // Preprocess through webpack
     preprocessors: {
-      [tests]: ['webpack'],
+      [tests]: ['webpack']
     },
 
-    singleRun: false,
-  });
-};
+    singleRun: false
+  })
+}

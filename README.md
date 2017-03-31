@@ -1,4 +1,4 @@
-<img src="https://codeship.com/projects/dbcbad50-f538-0134-5dd6-4eabb52e4bf9/status?branch=master"/>
+<img src="https://codeship.com/projects/182fa300-f83a-0134-33ee-76e4f316aab3/status?branch=master"/>
 
 # javascript-component
 

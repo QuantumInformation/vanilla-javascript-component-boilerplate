@@ -2,7 +2,6 @@ const path = require('path')
 const merge = require('webpack-merge')
 var WebpackBuildNotifierPlugin = require('webpack-build-notifier')
 
-
 const PATHS = {
   src: path.join(__dirname, './src'),
   build: path.join(__dirname, './build')
@@ -45,11 +44,10 @@ const commonConfig = merge([
     plugins: [
       new WebpackBuildNotifierPlugin({
         title: 'My Project Webpack Build'
-      }),
+      })
     ]
-  },
+  }
 ])
-
 
 const productionConfig = merge([])
 

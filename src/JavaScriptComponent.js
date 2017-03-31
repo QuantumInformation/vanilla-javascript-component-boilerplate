@@ -9,11 +9,9 @@ import './JavaScriptComponent.pcss'
  *
  */
 export default class JavaScriptComponent {
-
   constructor (selector) {
     this.CUSTOM_EVENT = 'CUSTOM_EVENT'
     this.customEventHandlerBound = this.customEventHandler.bind(this)
-
 
     this.hostElement = document.querySelector(selector)
     this.hostElement.className = 'javascript-component'
@@ -42,7 +40,7 @@ export default class JavaScriptComponent {
       this.componentOutput.innerHTML = 'hello-universe'
     })
     document.querySelector('.my-button-3').addEventListener('click', (event) => {
-      let customEvent = new CustomEvent(JavaScriptComponent.CUSTOM_EVENT)
+      let customEvent = new window.CustomEvent(JavaScriptComponent.CUSTOM_EVENT)
       document.body.dispatchEvent(customEvent)
     })
     document.body.addEventListener(JavaScriptComponent.CUSTOM_EVENT, this.customEventHandlerBound)
