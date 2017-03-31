@@ -15,6 +15,6 @@ module.exports = (config) => {
       [tests]: ['webpack']
     },
 
-    singleRun: false
+    singleRun: true
   })
 }
